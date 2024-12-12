@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/w/340/murdock/irgan/train.py", line 21, in <module>
+    model = create_model(opt)       # create a model given opt.model and other options
+  File "/w/340/murdock/irgan/models/__init__.py", line 63, in create_model
+    instance.initialize(opt)
+  File "/w/340/murdock/irgan/models/IRGAN_model.py", line 54, in initialize
+    self.tevnet_model = TeVNet(in_channels=3, out_channels=6, args=opt).to(self.device)
+  File "/w/340/murdock/irgan/TeVNet/models.py", line 11, in __init__
+    smp_model = args.smp_model
+AttributeError: 'Namespace' object has no attribute 'smp_model'
+srun: error: gpunode3: task 0: Exited with exit code 1

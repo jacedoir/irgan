@@ -1,0 +1,68 @@
+----------------- Options ---------------
+               batch_size: 1                             
+                    beta1: 0.5                           
+          checkpoints_dir: ./checkpoints                 
+           continue_train: False                         
+                 dataroot: ./datasets/KAIST              	[default: ./datasets/facades]
+             dataset_mode: aligned                       
+                direction: BtoA                          
+              display_env: main                          
+             display_freq: 400                           
+               display_id: 1                             
+            display_ncols: 4                             
+             display_port: 8097                          
+           display_server: http://localhost              
+          display_winsize: 256                           
+                    epoch: latest                        
+              epoch_count: 1                             
+                 fineSize: 256                           
+                  gpu_ids: 0                             
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: True                          	[default: None]
+                lambda_L1: 100.0                         
+             lambda_sobel: 15.0                          
+            lambda_tevnet: 15.0                          
+                 loadSize: 286                           
+                load_iter: 0                             	[default: 0]
+                       lr: 0.0002                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+         max_dataset_size: inf                           
+                    model: IRGAN                         	[default: pix2pix]
+               n_layers_D: 3                             
+                     name: KAIST_IRGAN                   	[default: facades_pix2pix]
+                      ndf: 64                            
+                     netD: basic                         
+                    netD1: spatch                        
+                    netD2: basic                         
+                     netG: uconvnext                     
+                      ngf: 64                            
+                    niter: 100                           
+              niter_decay: 100                           
+               no_dropout: False                         
+                  no_flip: False                         
+                  no_html: False                         
+                 no_lsgan: True                          
+                     norm: batch                         
+                    num_D: 3                             
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: train                         
+                pool_size: 0                             
+               preprocess: False                         
+               print_freq: 100                           
+           resize_or_crop: resize_and_crop               
+             save_by_iter: False                         
+          save_epoch_freq: 5                             
+         save_latest_freq: 5000                          
+           serial_batches: False                         
+                   suffix:                               
+           tevnet_weights: ./tev-out/KAIST/epoch_60.pth  	[default: None]
+         update_html_freq: 1000                          
+                  verbose: False                         
+----------------- End -------------------
+dataset [AlignedDataset] was created
+#training images = 40084
+False False

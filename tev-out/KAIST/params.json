@@ -1,0 +1,17 @@
+{
+    "train_dir": "/w/340/murdock/irgan/datasets/KAIST/train",
+    "eval_dir": "/w/340/murdock/irgan/datasets/KAIST/train",
+    "outputs_dir": "/w/340/murdock/irgan/tev-out/KAIST",
+    "lr": 0.001,
+    "batch_size": 32,
+    "num_epochs": 200,
+    "num_epochs_save": 10,
+    "num_epochs_val": 10,
+    "num_workers": 8,
+    "resume": null,
+    "start_epoch": 0,
+    "vnums": 4,
+    "smp_model": "Unet",
+    "smp_encoder": "resnet18",
+    "smp_encoder_weights": "imagenet"
+}

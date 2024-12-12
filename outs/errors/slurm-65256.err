@@ -1,0 +1,9 @@
+usage: train.py [-h] [--train-dir TRAIN_DIR] [--eval-dir EVAL_DIR]
+                --outputs-dir OUTPUTS_DIR [--lr LR] [--batch-size BATCH_SIZE]
+                [--num-epochs NUM_EPOCHS] [--num-epochs-save NUM_EPOCHS_SAVE]
+                [--num-epochs-val NUM_EPOCHS_VAL] [--num-workers NUM_WORKERS]
+                [--resume RESUME] [--start_epoch START_EPOCH] [--vnums VNUMS]
+                [--smp_model SMP_MODEL] [--smp_encoder SMP_ENCODER]
+                [--smp_encoder_weights SMP_ENCODER_WEIGHTS]
+train.py: error: the following arguments are required: --outputs-dir
+shell/train_vnums4.sh: line 8: --outputs-dir: command not found

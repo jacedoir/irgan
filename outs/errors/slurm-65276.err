@@ -1,0 +1,11 @@
+Downloading: "https://download.pytorch.org/models/resnet50-19c8e357.pth" to /u/murdock/.cache/torch/hub/checkpoints/resnet50-19c8e357.pth
+  0%|          | 0.00/97.8M [00:00<?, ?B/s]  5%|▍         | 4.88M/97.8M [00:00<00:02, 46.8MB/s] 10%|█         | 10.0M/97.8M [00:00<00:01, 50.4MB/s] 17%|█▋        | 16.5M/97.8M [00:00<00:01, 57.7MB/s] 25%|██▌       | 24.9M/97.8M [00:00<00:01, 68.9MB/s] 36%|███▌      | 35.4M/97.8M [00:00<00:00, 83.5MB/s] 48%|████▊     | 46.5M/97.8M [00:00<00:00, 94.4MB/s] 64%|██████▍   | 62.4M/97.8M [00:00<00:00, 117MB/s]  84%|████████▍ | 82.1M/97.8M [00:00<00:00, 145MB/s]100%|██████████| 97.8M/97.8M [00:00<00:00, 114MB/s]
+Traceback (most recent call last):
+  File "/w/340/murdock/irgan/train.py", line 21, in <module>
+    model = create_model(opt)       # create a model given opt.model and other options
+  File "/w/340/murdock/irgan/models/__init__.py", line 63, in create_model
+    instance.initialize(opt)
+  File "/w/340/murdock/irgan/models/IRGAN_model.py", line 66, in initialize
+    state_dict[n].copy_(p)
+RuntimeError: output with shape [64, 64, 1, 1] doesn't match the broadcast shape [64, 64, 3, 3]
+srun: error: gpunode33: task 0: Exited with exit code 1

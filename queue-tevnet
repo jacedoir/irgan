@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --partition=gpunodes
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=100G
+#SBATCH --gres=gpu:1
+#SBATCH --time=12:00:00
+#SBATCH --job-name=tevnet
+#SBATCH --output=outs/outputs/slurm-%j.out
+#SBATCH --error=outs/errors/slurm-%j.err
+
+cd TeVNet
+
+bash shell/train_vnums4.sh

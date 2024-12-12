@@ -1,0 +1,1 @@
+In models.IR-GAN_model.py, there should be a subclass of BaseModel with class name that matches IR-GANmodel in lowercase.

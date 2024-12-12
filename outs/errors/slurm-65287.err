@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/w/340/murdock/irgan/train.py", line 21, in <module>
+    model = create_model(opt)       # create a model given opt.model and other options
+  File "/w/340/murdock/irgan/models/__init__.py", line 63, in create_model
+    instance.initialize(opt)
+  File "/w/340/murdock/irgan/models/IRGAN_model.py", line 68, in initialize
+    state_dict[n].copy_(p)
+RuntimeError: output with shape [64, 64, 1, 1] doesn't match the broadcast shape [64, 64, 3, 3]
+srun: error: gpunode33: task 0: Exited with exit code 1
