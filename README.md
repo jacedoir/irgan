@@ -1,7 +1,9 @@
 
 # setup env
 Create env using conda and environnment.yml
+
 Install pip requirements.txt
+
 Then pip install -U git+https://github.com/qubvel/segmentation_models.pytorch
 
 # Start Visdom server
